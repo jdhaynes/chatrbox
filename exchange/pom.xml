@@ -5,11 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>jackhaynes</groupId>
-    <artifactId>chatrbox-exchange</artifactId>
+    <artifactId>exchange</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>private-msg</module>
         <module>core</module>
     </modules>
 
