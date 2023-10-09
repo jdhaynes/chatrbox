@@ -1,4 +1,4 @@
-const ampq = require("amqplib");
+import amqp from "amqplib";
 
 type Event = {
   eventId: string;
@@ -29,9 +29,7 @@ export const eventBus = <TEvents extends Events>(): EventBus<TEvents> => {
   const publish = <TEventType extends EventTypes>(
     type: TEventType,
     payload: TEvents[TEventType],
-  ) => {
-    console.log(payload);
-  };
+  ) => {};
 
   const subscribe = <TEventType extends EventTypes>(
     type: TEventType,

@@ -1,0 +1,6 @@
+{
+  "extends": "../tsconfig.base.json",
+  "rootDir": "src",
+  "outDir": "dist",
+  "references": [{"path":  "../lib"}]
+}

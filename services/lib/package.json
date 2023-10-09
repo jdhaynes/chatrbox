@@ -1,0 +1,9 @@
+{
+  "name": "@chatrbox/lib",
+  "devDependencies": {
+    "@types/amqplib": "^0.10.2"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.3"
+  }
+}
