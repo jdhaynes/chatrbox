@@ -15,7 +15,10 @@ interface EventMap extends Events {
 }
 
 (async () => {
-  const bus = await eventBus<EventMap>();
+  const bus = await eventBus<EventMap>({
+    host: "amqp://localhost:5672",
+    service: "exchange",
+  });
 
   const server = new Server();
   const exchangeId = uuid();
